@@ -190,7 +190,7 @@ var education = { /* JSON data for education information */
 			"name" : "University of South Florida",
 			"location" : "Tampa, Florida",
 			"degree" : "Bachelor of Arts Degree",
-			"majors" : "Psychology",
+			"majors" : ["Psychology"],
 			"dates" : "2012-2015",
 			"url" : "http://www.usf.edu/"
 		},
@@ -198,7 +198,7 @@ var education = { /* JSON data for education information */
 			"name" : "State College of Florida",
 			"location" : "Bradenton, Florida",
 			"degree" : "Associate in Arts Degree",
-			"majors" : "Not Applicable",
+			"majors" : ["Not Applicable"],
 			"dates" : "2010-2012",
 			"url" : "http://www.scf.edu/"
 		}
@@ -207,7 +207,7 @@ var education = { /* JSON data for education information */
 		{
 			"school" : "Udacity (udacity.com)",
 			"title" : "Front-End Web Developer Nanodegree",
-			"dates" : "2015-2016",
+			"date" : "2015-2016",
 			"url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 		}
 	],
@@ -220,7 +220,7 @@ var education = { /* JSON data for education information */
 				formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
 				var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 				$(".education-entry:last").append(formattedSchoolName.concat(formattedSchoolDegree));
-				var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+				var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].date);
 				$(".education-entry:last").append(formattedSchoolDates);
 				var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 				$(".education-entry:last").append(formattedSchoolLocation);
