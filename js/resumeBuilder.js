@@ -220,7 +220,7 @@ var education = { /* JSON data for education information */
 				formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
 				var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 				$(".education-entry:last").append(formattedSchoolName.concat(formattedSchoolDegree));
-				var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].date);
+				var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 				$(".education-entry:last").append(formattedSchoolDates);
 				var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 				$(".education-entry:last").append(formattedSchoolLocation);
@@ -238,7 +238,7 @@ var education = { /* JSON data for education information */
 				formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[online].url);
 				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[online].school);
 				$(".online-entry:last").append(formattedOnlineTitle.concat(formattedOnlineSchool));
-				var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[online].dates);
+				var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[online].date);
 				$(".online-entry:last").append(formattedOnlineDates);
 			}
 		}
