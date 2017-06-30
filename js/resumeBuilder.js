@@ -246,7 +246,7 @@ var education = { /* JSON data for education information */
 	"schools" : [
 		{
 			"name" : "freeCodeCamp",
-			"location" : "Online Course",
+			"location" : "Tampa, Florida",
 			"degree" : "Full Stack Web Development Certification",
 			"majors" : ["N/A"],
 			"dates" : "2017-2018",
@@ -254,7 +254,7 @@ var education = { /* JSON data for education information */
 		},
 		{
 			"name" : "Udacity",
-			"location" : "Online Course",
+			"location" : "Tampa, Florida",
 			"degree" : "Front-End Web Developer Nanodegree",
 			"majors" : ["N/A"],
 			"dates" : "2016-2017",
