@@ -71,6 +71,12 @@ h5 {
   float: left;
 }
 
+.major-text {
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+}
+
 .location-text {
   font-style: italic;
   font-size: 14px;
@@ -91,6 +97,10 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+.a-fix {
+ margin: 0px;
 }
 
 .welcome-message {
